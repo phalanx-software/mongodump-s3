@@ -2,7 +2,7 @@ FROM alpine:3.18
 
 MAINTAINER Leonardo Gatica <lgatica@protonmail.com>
 
-RUN apk add --no-cache mongodb-tools=100.7.0-r3 py3-pip python3 curl && \
+RUN apk add --no-cache mongodb-tools py3-pip python3 curl && \
   pip install awscli && \
   mkdir /backup
 
